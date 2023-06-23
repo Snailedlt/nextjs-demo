@@ -22,7 +22,7 @@ import {
 export function CardWithForm() {
   return (
     <Card className="w-[350px]">
-      <CardHeader className="bg-destructive">
+      <CardHeader>
         <CardTitle>Create project</CardTitle>
         <CardDescription>Deploy your new project in one-click.</CardDescription>
       </CardHeader>
