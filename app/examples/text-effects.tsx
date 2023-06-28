@@ -44,7 +44,7 @@ export function BlurIn({ text }: { text: string }) {
       animate="visible"
       transition={{ duration: 1 }}
       variants={variants1}
-      className="text-center font-display text-4xl font-bold tracking-[-0.02em] drop-shadow-sm md:text-xl md:leading-[5rem]"
+      className="text-center font-display text-4xl w-full font-bold tracking-[-0.02em] drop-shadow-sm md:text-xl md:leading-[5rem]"
     >
       {text}
     </motion.h1>

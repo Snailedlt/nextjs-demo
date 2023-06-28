@@ -19,9 +19,8 @@ export function BananaFunsy({ id, name }: Example) {
       >
         <Banana className="h-5 w-5 stroke-yellow-400" />
       </Button>
-      <p className="text-center w-full">
-        <BlurIn text={name} />
-      </p>
+
+      <BlurIn text={name} />
     </div>
   );
 }
