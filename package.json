@@ -10,6 +10,7 @@
     "push:mysql": "drizzle-kit push:mysql"
   },
   "dependencies": {
+    "@formkit/auto-animate": "^0.7.0",
     "@hookform/resolvers": "^3.1.1",
     "@planetscale/database": "^1.7.0",
     "@radix-ui/react-label": "^2.0.2",
@@ -25,6 +26,7 @@
     "drizzle-orm": "^0.27.0",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
+    "framer-motion": "^10.12.17",
     "lucide-react": "^0.252.0",
     "next": "13.4.7",
     "postcss": "8.4.24",

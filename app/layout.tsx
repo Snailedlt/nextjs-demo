@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -14,10 +15,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.className} bg-pink-100`}>
         <div className="flex flex-col gap-2">
-          <div>this is a navbar</div>
+          <div className="flex items-center p-4 gap-4">
+            <Link href="/products">Products</Link>
+            <Link href="/examples">Examples</Link>
+          </div>
           {children}
         </div>
       </body>
