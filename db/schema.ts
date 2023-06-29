@@ -9,3 +9,11 @@ export const products = mysqlTable("products", {
 
 export type Product = InferModel<typeof products, "select">;
 export type NewProduct = Omit<InferModel<typeof products, "insert">, "id">;
+
+export const countries = mysqlTable("countries", {
+  id: serial("id").primaryKey().autoincrement(),
+  name: varchar("name", { length: 256 }).notNull(),
+});
+
+export type Country = InferModel<typeof countries, "select">;
+export type NewCountry = Omit<InferModel<typeof countries, "insert">, "id">;

@@ -7,6 +7,6 @@ export default {
   schema: "./db/schema.ts",
   driver: "mysql2",
   dbCredentials: {
-    connectionString: "mysql://root:root@127.0.0.1:3306/db",
+    connectionString: 'mysql://hdxuen9n0j12if6pbpqm:pscale_pw_CjckOkXJqGCCEGFz7vbtHmROuKQ40YvIxqUzwkbCJya@aws.connect.psdb.cloud/nexjs-example?ssl={"rejectUnauthorized":true}',
   },
 } satisfies Config;
