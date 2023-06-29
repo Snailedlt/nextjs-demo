@@ -1,6 +1,7 @@
 import Link from "next/link";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import NavBar from "./navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,10 +19,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} bg-pink-100`}>
         <div className="flex flex-col gap-2">
-          <div className="flex items-center p-4 gap-4">
-            <Link href="/products">Products</Link>
-            <Link href="/examples">Examples</Link>
-          </div>
+          <NavBar/>
           {children}
         </div>
       </body>
