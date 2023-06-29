@@ -5,6 +5,7 @@ const NavBar = () => {
         <div className="justify-between space-x-4 text-blue-600">
         <Link href="/products">Products</Link>
         <Link href="/countries">Countries</Link>
+        <Link href="/examples">Banana Funsies</Link>
         </div>
      );
 }

@@ -10,6 +10,14 @@ export const products = mysqlTable("products", {
 export type Product = InferModel<typeof products, "select">;
 export type NewProduct = Omit<InferModel<typeof products, "insert">, "id">;
 
+export const example = mysqlTable("example", {
+  id: serial("id").primaryKey().autoincrement(),
+  name: varchar("name", { length: 256 }).notNull(),
+});
+
+export type Example = InferModel<typeof example, "select">;
+export type NewExample = Omit<InferModel<typeof example, "insert">, "id">;
+
 export const countries = mysqlTable("countries", {
   id: serial("id").primaryKey().autoincrement(),
   name: varchar("name", { length: 256 }).notNull(),
